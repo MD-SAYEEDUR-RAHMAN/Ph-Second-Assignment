@@ -229,6 +229,53 @@ a{
 
 
 /*section three complete*/
+/*Footer*/
+
+footer{
+    background-color: #0B0223;
+}
+.foot-full{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+.foot-color{
+    color: #fff;
+}
+.foot-2nd{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    gap: 60px;
+    color: #fff;
+    justify-content: center;
+}
+    .a {
+    color: #fff;
+    text-decoration: none;
+}
+.foot-2nd >img {
+    margin: 10px;
+}
+.footer-final{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 60px;
+}
+    
+
+
+
+/*Footer*/
+
+
+
 
 /* Responsive Media Queries for MObile*/
 @media screen and (max-width:427px) {
@@ -339,7 +386,17 @@ a{
     }
     
 
-   
+    .foot-2nd{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr)
+    }
+    .Se{
+        
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        padding: 0px 10px;
+        
+    }
 
 
 
