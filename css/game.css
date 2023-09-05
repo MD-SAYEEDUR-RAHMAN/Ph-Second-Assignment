@@ -1,34 +1,30 @@
 /*For Nav*/
-*{
-    margin: 0;
-    border: 0;
-}
-
 header{
-    width: 1920px;
-    height: 130px;
-    border: 1px solid black;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .nav-full{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+     align-items: center;
+    flex-wrap: wrap; 
    
-}
-.nav-first-div{
+ } 
+ .nav-first-div{
     display: flex;
     align-items: center;
+    gap: 10px;
    
 }
-.nav-logo{
+ .nav-logo{
     width: 86.041px;
     height: 40px;
-    flex-shrink: 0;
+    
 }
 h3{
     text-align: center;
     font-family: Work Sans;
-    font-size: 45px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -36,27 +32,30 @@ h3{
 .g-color{
     color:#FF42A5;
 }
-.nav-first-div> img{
+/*.nav-first-div> img{
     width: 86.041px;
     height: 40px;
-    flex-shrink: 0;
-    margin:44px 20px 46px 220px ;
-}
+    margin:44px 20px 46px 220px ; */
 .nav-second-div{
     display: flex;
     align-items: center;
     gap: 20px;
    
 }
+.nav-about-dev{
+    display: flex;
+    gap: 20px;
+}
 
-.nav-second-div > li {
+ li {
     list-style: none;
 
     
 }
-.nav-second-div li a{
+li a{
     text-decoration: none;
 }
+
 .nav-follow{
     display: flex;
     align-items: center;
@@ -64,12 +63,11 @@ h3{
     background: rgba(11, 2, 35, 0.10);
     width: 262px;
     height: 56px;
-    flex-shrink: 0;
-    margin: 37px 240px 37px 20px;
+    
 
 }
 .nav-follow-tittle{
-    padding: 17px 24px 18px 24px ;
+    padding: 17px 2px 18px 24px ;
 }
 
 a{
@@ -92,5 +90,48 @@ a{
 .nav-pic-2{
     width: 24px;
     height: 24px;
+} 
+/* Nav Complete */
+
+/* Responsive Media Queries for MObile*/
+@media screen and (max-width:427px) {
+    .nav-full {
+        flex-direction: column;
+        
+        
+    }
+    .nav-first-div{
+        padding: 10px;
+    }
+    .nav-second-div{
+        flex-direction: column;
+    }
+    .nav-follow{
+        justify-content: center;
+        align-items: center;  
+    }
+    .nav-about-dev{
+        flex-direction: column;
+        
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-/* Nav Complete*/
+
+/*For Tablets*/
+@media screen and (min-width:427px) and (max-width:769px) {
+    .nav-first-div{
+        margin: 10px 50px;
+        width: 100%;
+        justify-content:center ;
+        
+    }
+    .nav-second-div{
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+
