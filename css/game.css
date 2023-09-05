@@ -172,8 +172,24 @@ a{
 .banner-2{
 
     border: 1px solid gray;
-    margin-right: 125px;
-    
+    margin-right: 125px;   
+}
+/* Banner Completed*/
+
+/* Section two */
+.section-desc{
+    text-align: center;
+    margin: 5px 240px 48px 240px;
+}
+.four-part{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 424px;
+
+}
+.sec-color{
+    color: #8758F1;
 }
 
 
@@ -182,9 +198,7 @@ a{
 
 
 
-
-
-/* Banner Completed*/
+/*Section Two*/
 
 /* Responsive Media Queries for MObile*/
 @media screen and (max-width:427px) {
@@ -255,6 +269,33 @@ a{
     }
 
     /*Banner finished*/
+    /* Section-two*/
+
+    .sec-title{
+        font-size: large;
+    }
+    .section-desc{
+     border: 1px solid navy;
+     margin: 0px;
+     font-size: smaller;
+    }
+    .four-part{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 28px;
+        border: 1px solid green;
+        width: 80%;
+        
+    }
+
+
+
+    /*Section two Finished*/
+
+
+
+
 }
 
 /*For Tablets*/
@@ -281,5 +322,20 @@ a{
     .banner-1{
         width: 100%;
     }
+
+    /* section two */
+
+    .four-part{
+        display: grid;
+       grid-template-columns: repeat(2,2fr);
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 20px;
+        border: 1px solid green;
+        width: 80%;
+    }
 }
+
+
+
 
